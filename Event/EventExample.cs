@@ -19,27 +19,27 @@ namespace EventExample
         }
     }
 
-    class Program
-    {
-        static void PrintToConsole(string report)
-        {
-            Console.WriteLine("[Console] " + report);
-        }
+    //class Program
+    //{
+    //    static void PrintToConsole(string report)
+    //    {
+    //        Console.WriteLine("[Console] " + report);
+    //    }
 
-        static void SaveToFile(string report)
-        {
-            Console.WriteLine("[File] Saving report: " + report);
-        }
+    //    static void SaveToFile(string report)
+    //    {
+    //        Console.WriteLine("[File] Saving report: " + report);
+    //    }
 
-        static void Main()
-        {
-            ReportGenerator generator = new ReportGenerator();
+    //    static void Main()
+    //    {
+    //        ReportGenerator generator = new ReportGenerator();
 
-            generator.OnReportGenerated += PrintToConsole;
-            generator.OnReportGenerated += SaveToFile;
-            generator.OnReportGenerated += r => Console.WriteLine("[Lambda] Log: " + r);
+    //        generator.OnReportGenerated += PrintToConsole;
+    //        generator.OnReportGenerated += SaveToFile;
+    //        generator.OnReportGenerated += r => Console.WriteLine("[Lambda] Log: " + r);
 
-            generator.GenerateReport();
-        }
-    }
+    //        generator.GenerateReport();
+    //    }
+    //}
 }
