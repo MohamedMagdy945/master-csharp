@@ -38,11 +38,11 @@ class User
         Console.WriteLine($"[Email] Sending email: {msg}");
     }
 }
-//public class program
-//{
-//    public static  void Main()
-//    {
-//        User u1 = new User();
-//        u1.NotifyUsers();
-//    }
-//}
+public class DelegateUsage
+{
+    public static void Test()
+    {
+        User u1 = new User();
+        u1.NotifyUsers();
+    }
+}

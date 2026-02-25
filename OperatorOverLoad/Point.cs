@@ -1,4 +1,5 @@
-﻿using System;
+﻿using master_csharp.App.OperatorOverLoad;
+using System;
 
 namespace master_csharp.App.OperatorOverLoad
 {
@@ -53,18 +54,17 @@ namespace master_csharp.App.OperatorOverLoad
 
 }
 
+class OperatorOverloadingUsage
+{
+    public static void Test()
+    {
+        Point p1 = new Point(3, 4);
+        Point p2 = new Point(1, 2);
 
-//class Program
-//{
-//    static void Main()
-//    {
-//        Point p1 = new Point(3, 4);
-//        Point p2 = new Point(1, 2);
+        Point sum = p1 + p2;
+        Point diff = p1 - p2;
 
-//        Point sum = p1 + p2;
-//        Point diff = p1 - p2;
-
-//        Console.WriteLine("Sum: " + sum);     
-//        Console.WriteLine("Diff: " + diff);    
-//    }
-//}
+        Console.WriteLine("Sum: " + sum);
+        Console.WriteLine("Diff: " + diff);
+    }
+}
