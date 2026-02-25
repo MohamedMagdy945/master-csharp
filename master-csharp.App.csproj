@@ -8,12 +8,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Compile Remove="Enum\Status.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="Enum\Status.cs" />
-  </ItemGroup>
-
 </Project>

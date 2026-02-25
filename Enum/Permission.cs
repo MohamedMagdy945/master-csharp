@@ -1,5 +1,7 @@
 ﻿
 
+using master_csharp.App.Enum;
+
 namespace master_csharp.App.Enum
 {
     [Flags]
