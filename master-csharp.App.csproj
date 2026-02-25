@@ -9,7 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Exception\" />
+    <Compile Remove="Enum\Status.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Enum\Status.cs" />
   </ItemGroup>
 
 </Project>

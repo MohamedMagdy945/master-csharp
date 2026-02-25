@@ -9,6 +9,9 @@ namespace master_csharp.App
             {
                 //StructUsage stuctUsage = new StructUsage();
                 //StructUsage.Test();
+
+                EnumUsage en = new EnumUsage();
+                en.Test();
             }
         }
     }
