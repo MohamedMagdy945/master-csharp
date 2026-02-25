@@ -6,7 +6,7 @@ namespace EventExample
 
     class ReportGenerator
     {
-        public string Report { get; private set; }
+        public string Report { get; private set; } 
 
         public event ReportAction OnReportGenerated;
 
