@@ -1,5 +1,4 @@
 ﻿
-using master_csharp.App.Enum;
 
 namespace master_csharp.App.Enum
 {
@@ -11,7 +10,7 @@ namespace master_csharp.App.Enum
         Execute = 4
     }
 }
-public class EnumUsage2
+public class EnumUsage3
 {
     public void Test()
     {
