@@ -14,6 +14,8 @@ namespace master_csharp.App
                 //en.Test();
 
                 //GenericUsage.Test();
+                string x = " sd";
+                x.ToString();   
             }
         }
     }
