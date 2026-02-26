@@ -7,15 +7,16 @@ namespace master_csharp.App
         public static void Main(string[] args)
         {
             {
-                //StructUsage stuctUsage = new StructUsage();
-                //StructUsage.Test();
+                StructUsage stuctUsage = new StructUsage();
+                StructUsage.Test();
 
                 //EnumUsage en = new EnumUsage();
                 //en.Test();
 
-                //GenericUsage.Test();
+                GenericUsage.Test();
                 string x = " sd";
                 x.ToString();   
+                Console.ReadLine();
             }
         }
     }
