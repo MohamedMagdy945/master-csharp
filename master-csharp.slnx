@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="D:/Practise/master-csharp/master-csharp.App.csproj" />
   <Project Path="D:/Practise/master-csharp/master-csharp.Assembly/master-csharp.Assembly.csproj" Id="db7a17cb-3125-4b76-bd9d-5f50c615c984" />
+  <Project Path="master-csharp.DataStructure/master-csharp.DataStructure.csproj" Id="7f42c322-a1a3-45f8-aa82-cdce2c512583" />
 </Solution>
