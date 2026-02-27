@@ -10,6 +10,8 @@
 
   <ItemGroup>
     <Folder Include="Assembly\" />
+    <Folder Include="Attribute\" />
+    <Folder Include="Dispose\" />
   </ItemGroup>
 
 </Project>
