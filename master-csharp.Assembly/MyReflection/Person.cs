@@ -1,20 +1,26 @@
-﻿using System;
+﻿using master_csharp.Assembly.MyReflection;
+using System;
 using System.Reflection;
 
-class Person
-{
-    public string Name { get; set; }
-    public int Age { get; set; }
 
-    public void SayHello()
+namespace master_csharp.Assembly.MyReflection
+{
+    class Person
     {
-        Console.WriteLine($"Hello, my name is {Name}");
+        public string Name { get; set; }
+        public int Age { get; set; }
+
+        public void SayHello()
+        {
+            Console.WriteLine($"Hello, my name is {Name}");
+        }
     }
 }
 
-class Program
+
+class ReflectoinUsage
 {
-    static void Main()
+    public static void Use()
     {
         Type type = typeof(Person); // Get type information
 
