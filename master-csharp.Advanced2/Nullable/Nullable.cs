@@ -17,7 +17,7 @@ namespace master_csharp.Advanced2.Nullable
 }
 class NullableUsage
 {
-    static void Main()
+    static void Use()
     {
         // ----------------------------
         // 1️⃣ Nullable Value Types
