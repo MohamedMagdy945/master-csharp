@@ -1,12 +1,10 @@
-﻿namespace master_csharp.Advanced
+﻿namespace master_csharp.Threading
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            
-            StructUsage.Test();
-
+            Console.WriteLine("Hello, World!");
         }
-}
+    }
 }
