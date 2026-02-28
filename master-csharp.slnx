@@ -1,6 +1,7 @@
 <Solution>
   <Project Path="D:/Practise/master-csharp/master-csharp.Assembly/master-csharp.Assembly.csproj" Id="db7a17cb-3125-4b76-bd9d-5f50c615c984" />
   <Project Path="master-csharp.Advanced/master-csharp.Advanced.csproj" Id="22f2cc08-15e3-4e5e-add9-acd34107256e" />
+  <Project Path="master-csharp.Advanced2/master-csharp.Advanced2.csproj" Id="9b8f4351-e730-47a3-a30b-af00ba4b62ca" />
   <Project Path="master-csharp.DataStructure/master-csharp.DataStructure.csproj" Id="7f42c322-a1a3-45f8-aa82-cdce2c512583" />
   <Project Path="master-csharp.FileInputOutput/master-csharp.FileInputOutput.csproj" Id="5fda473d-40ae-4ec3-886c-2607380351c4" />
   <Project Path="master-csharp.Threading/master-csharp.Threading.csproj" Id="50cdcd96-3182-49f8-9c0b-1cdc24d2605e" />
