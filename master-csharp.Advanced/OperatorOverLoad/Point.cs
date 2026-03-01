@@ -43,7 +43,7 @@ namespace master_csharp.App.OperatorOverLoad
 
         public override int GetHashCode()
         {
-            return X ^ Y;
+            return HashCode.Combine(X, Y);
         }
 
         public override string ToString()
