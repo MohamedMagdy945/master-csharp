@@ -2,58 +2,57 @@
 using System.Collections;
 namespace master_csharp.App.Enumerator
 {
-  
-
-    class MyCustomCollection : IEnumerable<int>
+    class MyCustomCollection<T> : IEnumerable<T>
     {
-        private int[] data = { 1, 2, 3, 4 };
-
-        public IEnumerator<int> GetEnumerator()
+        private T[] data ;
+        public MyCustomCollection(T[] data)
         {
-            return new MyEnumerator(data);
+            this.data = data;
         }
-
+        public IEnumerator<T> GetEnumerator()
+        {
+            return new MyEnumerator<T>(this.data);
+        }
         IEnumerator IEnumerable.GetEnumerator()
         {
             return GetEnumerator();
         }
+    }
+    class MyEnumerator<T> : IEnumerator<T>
+    {
+        private T[] _data;
+        private int _position = -1;
 
-        private class MyEnumerator : IEnumerator<int>
+        public MyEnumerator(T[] items)
         {
-            private int[] _data;
-            private int _position = -1;
-
-            public MyEnumerator(int[] data)
+            this._data = items;    
+        }
+        public T Current
+        {
+            get
             {
-                _data = data;
+                if (_position < 0 || _position >= _data.Length)
+                    throw new InvalidOperationException();
+                return _data[_position];
             }
+        }
 
-            public int Current
-            {
-                get
-                {
-                    if (_position < 0 || _position >= _data.Length)
-                        throw new InvalidOperationException();
-                    return _data[_position];
-                }
-            }
+        object IEnumerator.Current => Current;
 
-            object IEnumerator.Current => Current;
 
-            public bool MoveNext()
-            {
-                _position++;
-                return (_position < _data.Length);
-            }
+        public bool MoveNext()
+        {
+            _position++;
+            return (_position < _data.Length);
+        }
 
-            public void Reset()
-            {
-                _position = -1;
-            }
+        public void Reset()
+        {
+            _position = -1;
+        }
 
-            public void Dispose()
-            {
-            }
+        public void Dispose()
+        {
         }
     }
 }
@@ -61,11 +60,17 @@ class CustomCollectionUsage
 {
     public static void Test()
     {
-        MyCustomCollection col = new MyCustomCollection();
+        MyCustomCollection<int> col = new MyCustomCollection<int>(new int[]{ 1, 2 , 3 , 4 ,30 , 40 ,54,55});
 
-        foreach (var x in col)
+        //foreach (var x in col)
+        //{
+        //    Console.WriteLine(x);
+        //}
+
+        IEnumerator enumerator = col.GetEnumerator();
+        while (enumerator.MoveNext())
         {
-            Console.WriteLine(x);
+            Console.WriteLine(enumerator.Current);
         }
     }
 }

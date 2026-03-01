@@ -1,4 +1,5 @@
-﻿namespace master_csharp.Advanced
+﻿
+namespace master_csharp.Advanced
 {
     internal class Program
     {
@@ -6,8 +7,9 @@
         {
 
             //StructUsage.Test();
-            CastingOperatorOverload.Use();
-
+            //CastingOperatorOverload.Use();
+            //Object.ReferenceEquals(2, 3);
+            CustomCollectionUsage.Test();
         }
 }
 }
