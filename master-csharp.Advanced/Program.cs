@@ -4,8 +4,9 @@
     {
         static void Main(string[] args)
         {
-            
-            StructUsage.Test();
+
+            //StructUsage.Test();
+            CastingOperatorOverload.Use();
 
         }
 }
