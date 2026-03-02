@@ -25,6 +25,12 @@ namespace DelegateExamples
             Filter(list, checkDel3);
 
             // 4. استخدام lambda مباشرة مع الدالة (مثل LINQ)
+            Filter(list, delegate (int x)
+            { return x > 3; }
+
+            );
+
+            Filter(list, (x) => { return x > 3; });
             Filter(list, x => x > 3);
         }
 
