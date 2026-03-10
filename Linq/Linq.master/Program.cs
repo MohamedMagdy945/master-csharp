@@ -1,5 +1,5 @@
-﻿using Linq.master.Defferd_Execution;
-using Linq.master.Projection;
+﻿
+using Linq.master.Quantifier;
 
 namespace Linq.master
 {
@@ -9,7 +9,8 @@ namespace Linq.master
         {
             //DefferdDemo.Use();
             //ProjectionDemo.SelectExample2(); 
-            ProjectionDemo.SelectMany(); 
+            //ProjectionDemo.SelectMany(); 
+            QuatifierExample.Use();
         }
     }
 }

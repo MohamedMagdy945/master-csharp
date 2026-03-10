@@ -1,10 +1,6 @@
 ﻿
 namespace Linq.master.Sort
 {
-
-    // ==========================
-    // SortDemo Class
-    // ==========================
     public class SortDemo
     {
 
@@ -96,7 +92,6 @@ namespace Linq.master.Sort
             return $"{Id} - {Name} - {Department} - {Salary}";
         }
     }
-}
     public class DepartmentComparer : IComparer<string>
     {
         public int Compare(string x, string y)
