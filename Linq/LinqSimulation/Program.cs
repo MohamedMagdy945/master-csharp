@@ -16,7 +16,7 @@ namespace Linq_Simulation
             var EE = Filter.GetEnumerator();
             while (EE.MoveNext())
             {
-                Console.Write($"{ EE.Current} ,"); // 5, 6 ,7 ,21 ,
+                Console.Write($"{ EE.Current} "); // 5 6 7 21 
             }       
             Console.WriteLine();
             var MyDS2 = new CustomList<string>(new string[] { "apple", "banana", "cherry", "date", "fig", "grape" });
@@ -26,7 +26,7 @@ namespace Linq_Simulation
 
             foreach (var item in Filter2)
             {
-                Console.Write($"{item} ,"); // apple, date, grape
+                Console.Write($"{item} "); // apple date grape
             }
         }
     }

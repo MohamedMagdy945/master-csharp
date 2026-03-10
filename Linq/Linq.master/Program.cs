@@ -1,4 +1,5 @@
 ﻿using Linq.master.Defferd_Execution;
+using Linq.master.Projection;
 
 namespace Linq.master
 {
@@ -6,7 +7,9 @@ namespace Linq.master
     {
         static void Main(string[] args)
         {
-            DefferdDemo.Use();
+            //DefferdDemo.Use();
+            //ProjectionDemo.SelectExample2(); 
+            ProjectionDemo.SelectMany(); 
         }
     }
 }
