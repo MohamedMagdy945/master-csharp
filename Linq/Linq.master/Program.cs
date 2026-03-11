@@ -1,4 +1,5 @@
 ﻿
+using Linq.master.ElementOperation;
 using Linq.master.Quantifier;
 
 namespace Linq.master
@@ -10,7 +11,14 @@ namespace Linq.master
             //DefferdDemo.Use();
             //ProjectionDemo.SelectExample2(); 
             //ProjectionDemo.SelectMany(); 
-            QuatifierExample.Use();
+            //QuatifierExample.Use();
+            //List<string> names = new() { "ahmed", "mohamed" , "mohamed"};
+
+            //string? name = names.FirstOrDefault(x => x == "mohamed");
+
+            //Console.WriteLine(name);
+            ElementIterationDemo.Run();
+
         }
     }
 }
