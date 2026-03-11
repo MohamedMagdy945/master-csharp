@@ -1,4 +1,5 @@
 ﻿
+using Linq.master.Aggregate;
 using Linq.master.ElementOperation;
 using Linq.master.Quantifier;
 
@@ -17,7 +18,8 @@ namespace Linq.master
             //string? name = names.FirstOrDefault(x => x == "mohamed");
 
             //Console.WriteLine(name);
-            ElementIterationDemo.Run();
+            //ElementIterationDemo.Run();
+            AggregateDemo.Run();
 
         }
     }
