@@ -15,4 +15,8 @@
     <Folder Include="MigrationConcept\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="Relationship\OneToOne.cs" />
+  </ItemGroup>
+
 </Project>
