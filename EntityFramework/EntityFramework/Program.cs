@@ -1,6 +1,4 @@
-﻿using EntityFrameworkCore_DotNet.GRUD_Operation;
-
-namespace EntityFrameworkCore_DotNet
+﻿namespace EntityFrameworkCore_DotNet
 {
     internal class Program
     {

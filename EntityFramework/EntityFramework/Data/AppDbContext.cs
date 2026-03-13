@@ -11,6 +11,7 @@ namespace EntityFrameworkCore_DotNet.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
+            base.OnConfiguring(options);
             options.UseSqlServer("Server=.;Database=CompanyDB;Trusted_Connection=True;TrustServerCertificate=True;");
         }
     }
