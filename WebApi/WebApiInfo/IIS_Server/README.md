@@ -38,8 +38,11 @@ ASP.NET Core Application
       │ (sends back to client)
       ▼
     Client
+```
 
-    ## Key Responsibilities of IIS
+---
+
+## Key Responsibilities of IIS
 
 - **Process Management**: Ensures your ASP.NET Core app runs reliably; restarts it if it crashes.  
 - **Security**: Handles authentication, SSL termination, and request filtering.  
