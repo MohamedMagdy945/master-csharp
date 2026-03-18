@@ -28,6 +28,22 @@ namespace ApiSrc
                 app.UseSwaggerUI();
             }
 
+            app.Use(async (httpContext, next) =>
+            {
+                await httpContext.Response.WriteAsync("Middlware 1");
+                await next.Invoke(httpContext);
+
+            });
+
+
+            app.Use(async (httpContext, next) =>
+            {
+                await httpContext.Response.WriteAsync("Middlware 2");
+                await next.Invoke(httpContext);
+
+            });
+
+
             app.UseAuthorization();
 
 
